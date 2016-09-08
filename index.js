@@ -10,11 +10,11 @@ module.exports = function(file) {
   var svg = tr.select('svg')
     .createReadStream()
     .once('data', function() {
-      out.queue('module.exports = ')
+      out.queue('module.exports = "')
     })
 
   svg.once('end', function() {
-    out.queue(';')
+    out.queue('";')
     out.queue(null)
   }).on('data', function(data) {
     data = String(data)
