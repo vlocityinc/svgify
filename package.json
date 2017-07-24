@@ -22,6 +22,6 @@
   "readmeFilename": "README.md",
   "dependencies": {
     "through": "~2.3.4",
-    "trumpet": "~1.5.4"
+    "trumpet": "~1.7.2"
   }
 }
